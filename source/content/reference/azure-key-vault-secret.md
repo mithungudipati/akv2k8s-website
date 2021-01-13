@@ -20,7 +20,7 @@ spec:
       version: <optional - version of object to sync>
       contentType: <only used when type is the special multi-key-value-secret - either application/x-json or application/x-yaml>
   output: # ignored by env injector, required by controller to output kubernetes secret
-    transform: # optional transformers executed in listed order
+    transforms: # optional transformers executed in listed order
       - trim # optional - trims empty space
       - base64encode # optional - encode to base64
       - base64decode # optional - decode from base64
